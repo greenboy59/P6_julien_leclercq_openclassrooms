@@ -13,6 +13,8 @@ Ce projet à été généré avec [Angular CLI](https://github.com/angular/angul
 
 # Lancer le projet
 
+⚠️ Node.Js doit être installé au préalable: https://nodejs.org/en/
+
 ## Clonage des repositories
 Backend: $ https://github.com/greenboy59/P6_julien_leclercq_openclassrooms.git  
 Frontend: $ https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6.git 
