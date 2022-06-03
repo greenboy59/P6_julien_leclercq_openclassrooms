@@ -23,9 +23,11 @@ exports.signup = (req, res, next) => {
       .catch(error => res.status(500).json({ error }));
   }
   else {
-    res.status(400).json({ message: 'Mot de passe trop faible, minimum 8 caractères, dont 1 majuscule, 1 minuscule, 1 nombre et 1 caractère spécial' })
+    res.status(400).json(
+      { message: 'Mot de passe trop faible, minimum 8 caractères, dont 1 majuscule, 1 minuscule, 1 nombre et 1 caractère spécial' }
+    )
   }
- };
+};
 
  // Login d'un utilisateur existant 
  exports.login = (req, res, next) => {
