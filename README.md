@@ -20,7 +20,7 @@ Backend: $ https://github.com/greenboy59/P6_julien_leclercq_openclassrooms.git
 Frontend: $ https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6.git 
 
 ## Lancement du front
-$ cd ./frontend   
+$ cd ./src   
 $ npm install node-sass   
 $ npm run start   
 
