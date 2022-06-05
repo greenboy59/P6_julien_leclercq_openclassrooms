@@ -40,15 +40,13 @@ exports.createSauce = (req, res, next) => {
 // Modifie une sauce
 exports.modifySauce = (req, res, next) => {
   const sauceObject = req.file ?
-    {
-      ...JSON.parse(req.body.sauce), imageUrl: `${req.protocol}://${req.get('host')}/images/${req.file.filename}`
-    }
-    :
-    {
-      ...req.body
-    };
+    { ...JSON.parse(req.body.sauce), imageUrl: `${req.protocol}://${req.get('host')}/images/${req.file.filename}` }
+    : { ...req.body };
   // Modification de la sauce si vérif de l'id utilisateur et id sauce sont ok,sinon envoi d'une erreur code 403
-  Sauce.updateOne({ _id: req.params.id }, { ...sauceObject, _id: req.params.id })
+  Sauce.updateOne(
+    { _id: req.params.id },
+    { ...sauceObject, _id: req.params.id }
+  )
     .then(() => res.status(200).json({ message: 'Sauce modifiée !' }))
     .catch(error => res.status(403).json({ error: error, message: 'Requête non autorisée' }));
 };
