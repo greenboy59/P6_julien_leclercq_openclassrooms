@@ -11,4 +11,4 @@ karma.conf.js
 tsconfig.app.json
 tsconfig.json
 tsconfig.spec.json
-.gitignore
+/.gitignore
