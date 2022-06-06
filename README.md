@@ -27,7 +27,7 @@ $ npm run start
 ## Lancement du serveur Node
 $ cd ./backend  
 $ npm install   
-$ nodemon server   
+$ node server   
 
 ## Lancement de l'API
 $ Se connecter à l'url : http://localhost:4200
