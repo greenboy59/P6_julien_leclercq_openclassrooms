@@ -21,6 +21,7 @@ Frontend: $ https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6.gi
 
 ## Lancement du front
 $ cd ./src   
+$ npm install 
 $ npm install node-sass   
 $ npm run start   
 
